@@ -1,0 +1,13 @@
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\bin\Debug\controle_de_estoque.exe.config
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\bin\Debug\controle_de_estoque.exe
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\bin\Debug\controle_de_estoque.pdb
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.csproj.AssemblyReference.cache
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.Form1.resources
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.Properties.Resources.resources
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.csproj.GenerateResource.cache
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.exe
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.pdb
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.exe.config
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.F_Registro.resources
+C:\Users\Aluno\source\repos\controle_de_estoque\controle_de_estoque\obj\Debug\controle_de_estoque.F_senharecuperar.resources
