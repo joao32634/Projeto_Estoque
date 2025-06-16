@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnregistrar = new System.Windows.Forms.Button();
             this.tbxUsuarioR = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbxSenhaRR = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tbxEmailR = new System.Windows.Forms.TextBox();
             this.tbxSenhaR = new System.Windows.Forms.TextBox();
@@ -45,18 +43,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("News701 BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(107, 151);
+            this.label1.Location = new System.Drawing.Point(71, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 25);
+            this.label1.Size = new System.Drawing.Size(69, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuário:";
             // 
             // btnregistrar
             // 
             this.btnregistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregistrar.Location = new System.Drawing.Point(285, 310);
+            this.btnregistrar.Location = new System.Drawing.Point(190, 202);
+            this.btnregistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnregistrar.Name = "btnregistrar";
-            this.btnregistrar.Size = new System.Drawing.Size(111, 35);
+            this.btnregistrar.Size = new System.Drawing.Size(74, 23);
             this.btnregistrar.TabIndex = 1;
             this.btnregistrar.Text = "Registrar";
             this.btnregistrar.UseVisualStyleBackColor = true;
@@ -64,52 +64,38 @@
             // 
             // tbxUsuarioR
             // 
-            this.tbxUsuarioR.Location = new System.Drawing.Point(212, 150);
+            this.tbxUsuarioR.Location = new System.Drawing.Point(141, 98);
+            this.tbxUsuarioR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxUsuarioR.Name = "tbxUsuarioR";
-            this.tbxUsuarioR.Size = new System.Drawing.Size(262, 26);
+            this.tbxUsuarioR.Size = new System.Drawing.Size(176, 20);
             this.tbxUsuarioR.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("News701 BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(8, 250);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(194, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Confirmar Senha:";
-            // 
-            // tbxSenhaRR
-            // 
-            this.tbxSenhaRR.Location = new System.Drawing.Point(212, 249);
-            this.tbxSenhaRR.Name = "tbxSenhaRR";
-            this.tbxSenhaRR.Size = new System.Drawing.Size(262, 26);
-            this.tbxSenhaRR.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("News701 BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(121, 185);
+            this.label3.Location = new System.Drawing.Point(81, 120);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 25);
+            this.label3.Size = new System.Drawing.Size(60, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "E-mail:";
             // 
             // tbxEmailR
             // 
-            this.tbxEmailR.Location = new System.Drawing.Point(212, 185);
+            this.tbxEmailR.Location = new System.Drawing.Point(141, 120);
+            this.tbxEmailR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxEmailR.Name = "tbxEmailR";
-            this.tbxEmailR.Size = new System.Drawing.Size(262, 26);
+            this.tbxEmailR.Size = new System.Drawing.Size(176, 20);
             this.tbxEmailR.TabIndex = 6;
             // 
             // tbxSenhaR
             // 
-            this.tbxSenhaR.Location = new System.Drawing.Point(212, 217);
+            this.tbxSenhaR.Location = new System.Drawing.Point(141, 141);
+            this.tbxSenhaR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbxSenhaR.Name = "tbxSenhaR";
-            this.tbxSenhaR.Size = new System.Drawing.Size(262, 26);
+            this.tbxSenhaR.Size = new System.Drawing.Size(176, 20);
             this.tbxSenhaR.TabIndex = 8;
             // 
             // label4
@@ -117,9 +103,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("News701 BT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(121, 217);
+            this.label4.Location = new System.Drawing.Point(81, 141);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 25);
+            this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "Senha:";
             // 
@@ -128,28 +115,28 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("News701 BT", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(262, 51);
+            this.label5.Location = new System.Drawing.Point(175, 33);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 39);
+            this.label5.Size = new System.Drawing.Size(109, 27);
             this.label5.TabIndex = 17;
             this.label5.Text = "Registro";
             // 
             // F_Registro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateBlue;
-            this.ClientSize = new System.Drawing.Size(653, 450);
+            this.ClientSize = new System.Drawing.Size(435, 292);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tbxSenhaR);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbxEmailR);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbxSenhaRR);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.tbxUsuarioR);
             this.Controls.Add(this.btnregistrar);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "F_Registro";
             this.Text = "F_Registro";
             this.ResumeLayout(false);
@@ -162,8 +149,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnregistrar;
         private System.Windows.Forms.TextBox tbxUsuarioR;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbxSenhaRR;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbxEmailR;
         private System.Windows.Forms.TextBox tbxSenhaR;

@@ -58,11 +58,23 @@
     <Compile Include="F_Controle_de_Estoque.Designer.cs">
       <DependentUpon>F_Controle_de_Estoque.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Movimento_de_Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Movimento_de_Estoque.Designer.cs">
+      <DependentUpon>F_Movimento_de_Estoque.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_Registro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="F_Registro.Designer.cs">
       <DependentUpon>F_Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Relatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Relatorios.Designer.cs">
+      <DependentUpon>F_Relatorios.cs</DependentUpon>
     </Compile>
     <Compile Include="F_senharecuperar.cs">
       <SubType>Form</SubType>
@@ -70,6 +82,7 @@
     <Compile Include="F_senharecuperar.Designer.cs">
       <DependentUpon>F_senharecuperar.cs</DependentUpon>
     </Compile>
+    <Compile Include="PasswordHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -78,8 +91,14 @@
     <EmbeddedResource Include="F_Controle_de_Estoque.resx">
       <DependentUpon>F_Controle_de_Estoque.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_Movimento_de_Estoque.resx">
+      <DependentUpon>F_Movimento_de_Estoque.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_Registro.resx">
       <DependentUpon>F_Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Relatorios.resx">
+      <DependentUpon>F_Relatorios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_senharecuperar.resx">
       <DependentUpon>F_senharecuperar.cs</DependentUpon>
@@ -92,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +125,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-blue-abstract-background-business-picture-image_1328234.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\855820794ac32f6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\855820794ac32f61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1331353813-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\860.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jfgh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jksjfdjs.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
