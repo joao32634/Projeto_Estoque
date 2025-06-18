@@ -92,10 +92,14 @@
             // cbbTipoRelatorio
             // 
             this.cbbTipoRelatorio.FormattingEnabled = true;
+            this.cbbTipoRelatorio.Items.AddRange(new object[] {
+            "Cadastro de Produtos",
+            "Movimento de Produtos"});
             this.cbbTipoRelatorio.Location = new System.Drawing.Point(177, 47);
             this.cbbTipoRelatorio.Name = "cbbTipoRelatorio";
             this.cbbTipoRelatorio.Size = new System.Drawing.Size(166, 21);
             this.cbbTipoRelatorio.TabIndex = 3;
+            this.cbbTipoRelatorio.SelectedIndexChanged += new System.EventHandler(this.cbbTipoRelatorio_SelectedIndexChanged);
             // 
             // dgvRelatorios
             // 

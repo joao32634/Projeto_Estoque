@@ -166,5 +166,31 @@ namespace controle_de_estoque
             }
 
         }
+
+        private void cbbTipoRelatorio_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection sql = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
+"Initial Catalog=BDESTOQUE;Integrated Security=true");
+
+            string command = "Select ID, Nome, Categoria,Data_de_Movimentacao, Quantidade, Motivo, Fornecedor, Usuario from dbo.Movimentacao_Produto ";
+            try
+            {
+                //executa o comando SQL e recebendo os dados
+                SqlDataAdapter da = new SqlDataAdapter(command, sql);
+
+                //instância um DateTable - que servirá de intermediário
+                DataTable dt = new DataTable();
+
+                //Preencher o dataGrudView com os dados do dt
+                da.Fill(dt);
+
+                dgvRelatorios.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Listar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
     }
 }

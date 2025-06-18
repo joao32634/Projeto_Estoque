@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRegistro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxQuantidade = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,35 +43,40 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbbCategoria = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbxFornecedor = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRegistro
             // 
-            this.button1.Location = new System.Drawing.Point(255, 362);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Registro";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRegistro.Location = new System.Drawing.Point(297, 362);
+            this.btnRegistro.Name = "btnRegistro";
+            this.btnRegistro.Size = new System.Drawing.Size(75, 23);
+            this.btnRegistro.TabIndex = 0;
+            this.btnRegistro.Text = "Registro";
+            this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 60);
+            this.label1.Location = new System.Drawing.Point(134, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Produto:";
             // 
-            // textBox1
+            // tbxQuantidade
             // 
-            this.textBox1.Location = new System.Drawing.Point(227, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(218, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbxQuantidade.Location = new System.Drawing.Point(227, 194);
+            this.tbxQuantidade.Name = "tbxQuantidade";
+            this.tbxQuantidade.Size = new System.Drawing.Size(218, 20);
+            this.tbxQuantidade.TabIndex = 2;
             // 
             // label2
             // 
@@ -97,19 +102,20 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(156, 269);
+            this.label4.Location = new System.Drawing.Point(130, 289);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 16);
+            this.label4.Size = new System.Drawing.Size(91, 16);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Usuário:";
+            this.label4.Text = "Fornecedor:";
             // 
             // cbbProduto
             // 
             this.cbbProduto.FormattingEnabled = true;
-            this.cbbProduto.Location = new System.Drawing.Point(155, 79);
+            this.cbbProduto.Location = new System.Drawing.Point(159, 60);
             this.cbbProduto.Name = "cbbProduto";
             this.cbbProduto.Size = new System.Drawing.Size(331, 21);
             this.cbbProduto.TabIndex = 8;
+            this.cbbProduto.SelectedIndexChanged += new System.EventHandler(this.cbbProduto_SelectedIndexChanged);
             // 
             // dtpDataMovimentacao
             // 
@@ -184,20 +190,64 @@
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             this.relatóriosToolStripMenuItem.Click += new System.EventHandler(this.relatóriosToolStripMenuItem_Click);
             // 
-            // comboBox2
+            // cbbCategoria
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(227, 268);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(218, 21);
-            this.comboBox2.TabIndex = 16;
+            this.cbbCategoria.FormattingEnabled = true;
+            this.cbbCategoria.Items.AddRange(new object[] {
+            "Eletrônicos",
+            "Informática",
+            "Celulares e Telefonia",
+            "Áudio e Vídeo"});
+            this.cbbCategoria.Location = new System.Drawing.Point(159, 106);
+            this.cbbCategoria.Name = "cbbCategoria";
+            this.cbbCategoria.Size = new System.Drawing.Size(331, 21);
+            this.cbbCategoria.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(134, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 16);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Categoria:";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(227, 261);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(218, 21);
+            this.comboBox4.TabIndex = 20;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(156, 262);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 16);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Usuário:";
+            // 
+            // tbxFornecedor
+            // 
+            this.tbxFornecedor.Location = new System.Drawing.Point(227, 288);
+            this.tbxFornecedor.Name = "tbxFornecedor";
+            this.tbxFornecedor.Size = new System.Drawing.Size(218, 20);
+            this.tbxFornecedor.TabIndex = 21;
             // 
             // F_Movimento_de_Estoque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.tbxFornecedor);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cbbCategoria);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.radioButton2);
@@ -208,9 +258,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxQuantidade);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRegistro);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "F_Movimento_de_Estoque";
@@ -225,9 +275,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRegistro;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxQuantidade;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -240,6 +290,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbbCategoria;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbxFornecedor;
     }
 }
