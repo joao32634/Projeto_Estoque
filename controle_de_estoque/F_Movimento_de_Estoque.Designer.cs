@@ -37,10 +37,10 @@
             this.cbbProduto = new System.Windows.Forms.ComboBox();
             this.dtpDataMovimentacao = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbEntrada = new System.Windows.Forms.RadioButton();
+            this.rdbSaida = new System.Windows.Forms.RadioButton();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbMotivo = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cbbCategoria = new System.Windows.Forms.ComboBox();
@@ -119,9 +119,10 @@
             // 
             // dtpDataMovimentacao
             // 
+            this.dtpDataMovimentacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDataMovimentacao.Location = new System.Drawing.Point(345, 133);
             this.dtpDataMovimentacao.Name = "dtpDataMovimentacao";
-            this.dtpDataMovimentacao.Size = new System.Drawing.Size(211, 20);
+            this.dtpDataMovimentacao.Size = new System.Drawing.Size(145, 20);
             this.dtpDataMovimentacao.TabIndex = 9;
             // 
             // label5
@@ -134,27 +135,29 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Data de Movimentação:";
             // 
-            // radioButton1
+            // rdbEntrada
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(345, 159);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(62, 17);
-            this.radioButton1.TabIndex = 11;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Entrada";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbEntrada.AutoSize = true;
+            this.rdbEntrada.Location = new System.Drawing.Point(345, 159);
+            this.rdbEntrada.Name = "rdbEntrada";
+            this.rdbEntrada.Size = new System.Drawing.Size(62, 17);
+            this.rdbEntrada.TabIndex = 11;
+            this.rdbEntrada.TabStop = true;
+            this.rdbEntrada.Text = "Entrada";
+            this.rdbEntrada.UseVisualStyleBackColor = true;
+            this.rdbEntrada.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // rdbSaida
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(424, 159);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(52, 17);
-            this.radioButton2.TabIndex = 12;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Saida";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbSaida.AutoSize = true;
+            this.rdbSaida.Location = new System.Drawing.Point(424, 159);
+            this.rdbSaida.Name = "rdbSaida";
+            this.rdbSaida.Size = new System.Drawing.Size(52, 17);
+            this.rdbSaida.TabIndex = 12;
+            this.rdbSaida.TabStop = true;
+            this.rdbSaida.Text = "Saida";
+            this.rdbSaida.UseVisualStyleBackColor = true;
+            this.rdbSaida.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // button2
             // 
@@ -165,13 +168,23 @@
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cbbMotivo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(227, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 21);
-            this.comboBox1.TabIndex = 14;
+            this.cbbMotivo.FormattingEnabled = true;
+            this.cbbMotivo.Items.AddRange(new object[] {
+            "Compra",
+            "Transferencia",
+            "Venda",
+            "Produto Defeituoso",
+            "Devolução de Compra",
+            "Devolução de Venda",
+            "Pouco Estoque",
+            "",
+            ""});
+            this.cbbMotivo.Location = new System.Drawing.Point(227, 234);
+            this.cbbMotivo.Name = "cbbMotivo";
+            this.cbbMotivo.Size = new System.Drawing.Size(218, 21);
+            this.cbbMotivo.TabIndex = 14;
             // 
             // menuStrip1
             // 
@@ -220,6 +233,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(218, 21);
             this.comboBox4.TabIndex = 20;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -248,10 +262,10 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cbbCategoria);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbbMotivo);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbSaida);
+            this.Controls.Add(this.rdbEntrada);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dtpDataMovimentacao);
             this.Controls.Add(this.cbbProduto);
@@ -284,10 +298,10 @@
         private System.Windows.Forms.ComboBox cbbProduto;
         private System.Windows.Forms.DateTimePicker dtpDataMovimentacao;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbEntrada;
+        private System.Windows.Forms.RadioButton rdbSaida;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbMotivo;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
         private System.Windows.Forms.ComboBox cbbCategoria;

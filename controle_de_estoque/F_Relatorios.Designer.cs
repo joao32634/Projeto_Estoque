@@ -56,7 +56,13 @@
             this.tbxID = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.btnDeletar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gerenciamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movimentoDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorios)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -340,6 +346,46 @@
             this.btnDeletar.UseVisualStyleBackColor = false;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gerenciamentoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1283, 24);
+            this.menuStrip1.TabIndex = 34;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // gerenciamentoToolStripMenuItem
+            // 
+            this.gerenciamentoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroDeProdutosToolStripMenuItem,
+            this.movimentoDeProdutosToolStripMenuItem,
+            this.relatóriosToolStripMenuItem});
+            this.gerenciamentoToolStripMenuItem.Name = "gerenciamentoToolStripMenuItem";
+            this.gerenciamentoToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.gerenciamentoToolStripMenuItem.Text = "Janelas";
+            this.gerenciamentoToolStripMenuItem.Click += new System.EventHandler(this.gerenciamentoToolStripMenuItem_Click);
+            // 
+            // cadastroDeProdutosToolStripMenuItem
+            // 
+            this.cadastroDeProdutosToolStripMenuItem.Name = "cadastroDeProdutosToolStripMenuItem";
+            this.cadastroDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.cadastroDeProdutosToolStripMenuItem.Text = "Cadastro de Produtos";
+            this.cadastroDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeProdutosToolStripMenuItem_Click);
+            // 
+            // movimentoDeProdutosToolStripMenuItem
+            // 
+            this.movimentoDeProdutosToolStripMenuItem.Name = "movimentoDeProdutosToolStripMenuItem";
+            this.movimentoDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.movimentoDeProdutosToolStripMenuItem.Text = "Movimento de Produtos";
+            // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
             // F_Relatorios
             // 
             this.AcceptButton = this.btnFiltro;
@@ -374,10 +420,14 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "F_Relatorios";
             this.Text = "F_Relatorios";
             this.Load += new System.EventHandler(this.F_Relatorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorios)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -413,5 +463,10 @@
         private System.Windows.Forms.TextBox tbxID;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnDeletar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem gerenciamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movimentoDeProdutosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
     }
 }

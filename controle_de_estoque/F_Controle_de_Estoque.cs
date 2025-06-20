@@ -13,10 +13,12 @@ namespace controle_de_estoque
 {
     public partial class F_Controle_de_Estoque : Form
     {
-        public F_Controle_de_Estoque(Form1 f)
+        public F_Controle_de_Estoque()
         {
-            f.Visible = false;
+            
             InitializeComponent();
+
+
         }
 
         private void F_Controle_de_Estoque_Load(object sender, EventArgs e)

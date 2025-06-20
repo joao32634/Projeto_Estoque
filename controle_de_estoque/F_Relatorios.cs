@@ -24,7 +24,7 @@ namespace controle_de_estoque
             SqlConnection sql = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
     "Initial Catalog=BDESTOQUE;Integrated Security=true");
 
-            string command = "Select ID, Nome, Categoria, Unidade, Preço_de_Custo, Preço_de_Venda, Quantidade_Inicial, Estoque_Minimo, Fornecedor from dbo.Cadastro_Produto ";
+            string command = "Select id, Nome, Categoria, Unidade, Preço_de_Custo, Preço_de_Venda, Quantidade_Inicial, Estoque_Minimo, Fornecedor from dbo.Cadastro_Produto ";
             try
             {
                 //executa o comando SQL e recebendo os dados
@@ -66,6 +66,7 @@ namespace controle_de_estoque
             string command = $"select Nome, Categoria, Unidade, Preço_de_Custo, Preço_de_Venda, Quantidade_Inicial, Estoque_Minimo, Fornecedor from dbo.Cadastro_Produto WHERE Categoria LIKE '%{PesquisaNome}%'";
             try
             {
+               
                 //executa o comando SQL e recebendo os dados
                 SqlDataAdapter da = new SqlDataAdapter(command, sql);
 
@@ -169,27 +170,44 @@ namespace controle_de_estoque
 
         private void cbbTipoRelatorio_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
-"Initial Catalog=BDESTOQUE;Integrated Security=true");
 
-            string command = "Select ID, Nome, Categoria,Data_de_Movimentacao, Quantidade, Motivo, Fornecedor, Usuario from dbo.Movimentacao_Produto ";
+            SqlConnection sql = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
+                       "Initial Catalog=BDESTOQUE;Integrated Security=true");
+
+            string command = "Select id, Nome, Categoria, Data_de_Movimentacao, Quantidade, Entrada, Saida, Motivo, Fornecedor FROM dbo.Movimento_Produto ";
             try
             {
-                //executa o comando SQL e recebendo os dados
-                SqlDataAdapter da = new SqlDataAdapter(command, sql);
+                
 
-                //instância um DateTable - que servirá de intermediário
-                DataTable dt = new DataTable();
 
-                //Preencher o dataGrudView com os dados do dt
-                da.Fill(dt);
+                    //executa o comando SQL e recebendo os dados
+                    SqlDataAdapter da = new SqlDataAdapter(command, sql);
 
-                dgvRelatorios.DataSource = dt;
+                    //instância um DateTable - que servirá de intermediário
+                    DataTable dt = new DataTable();
+
+                    //Preencher o dataGrudView com os dados do dt
+                    da.Fill(dt);
+
+                    dgvRelatorios.DataSource = dt;
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Listar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+
+        private void gerenciamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastroDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Controle_de_Estoque janela = new F_Controle_de_Estoque();
+            janela.ShowDialog();
 
         }
     }

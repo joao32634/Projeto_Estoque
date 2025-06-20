@@ -75,9 +75,9 @@ namespace controle_de_estoque
                         senhaHashDigitada = senhaHashDigitada.Replace(" ", "");
                         if (senhaHashDigitada == senhaHashBanco)
                         {
-                            F_Controle_de_Estoque janelaEstoque = new F_Controle_de_Estoque(this);
+                            F_Controle_de_Estoque janelaEstoque = new F_Controle_de_Estoque();
                             janelaEstoque.ShowDialog();
-                            this.Close();
+                            
                             
 
 
