@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,34 +8,32 @@ using System.Windows.Forms;
 
 namespace controle_de_estoque
 {
-    public partial class F_Registro : Form
-    {
-        public F_Registro()
-        {
-            InitializeComponent();
-        }
+    internal class C_Usuario
+    {    
+        private int id;
+        private string usuario;
+        private string senha;
+        private string salt;
+        private string email;
+        private C_Conexao C_Conexao = new C_Conexao();
 
-        private void btnregistrar_Click(object sender, EventArgs e)
+        public void cadastrarUsuario(string u, string se, string email)
         {
-            C_Usuario c_Cadastrar = new C_Usuario();
-
-            c_Cadastrar.cadastrarUsuario(tbxUsuarioR.Text, tbxSenhaR.Text, tbxEmailR.Text);
-            /*string strconn = ("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
-                        "Initial Catalog=BDESTOQUE;Integrated Security=true");
-            SqlConnection conn = new SqlConnection(strconn);
+            SqlConnection conn = C_Conexao.AbrirConexao();
             string sql = "INSERT INTO Cadastro (usuario, email, senha, salt)" +
-                "VALUES(@usuario, @email, @senha, @salt)";
+                      "VALUES(@usuario, @email, @senha, @salt)";
             string salt = "";
             string senhahash = "";
+            
             try
             {
                 salt = PasswordHelper.GenerateSalt();
-                senhahash = PasswordHelper.HashPassword(tbxSenhaR.Text, salt);
+                senhahash = PasswordHelper.HashPassword(se, salt);
                 SqlCommand comando = new SqlCommand(sql, conn);
                 try
                 {
-                    comando.Parameters.Add(new SqlParameter("@usuario", tbxUsuarioR.Text));
-                    comando.Parameters.Add(new SqlParameter("@email" , tbxEmailR.Text));
+                    comando.Parameters.Add(new SqlParameter("@usuario", u));
+                    comando.Parameters.Add(new SqlParameter("@email", email));
                     comando.Parameters.Add(new SqlParameter("@senha", senhahash));
                     comando.Parameters.Add(new SqlParameter("@salt", salt));
 
@@ -47,9 +42,9 @@ namespace controle_de_estoque
                     MessageBox.Show("Cadastrado com Sucesso!", " cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("erro 1", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(ex.Message);
                 }
 
 
@@ -68,7 +63,9 @@ namespace controle_de_estoque
             finally
             {
                 conn.Close();
-            }*/
+            }
+
+
         }
     }
 }

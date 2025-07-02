@@ -30,14 +30,13 @@ namespace controle_de_estoque
 
         private void F_Movimento_de_Estoque_Load(object sender, EventArgs e)
         {
-            SqlConnection sql = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
-                      "Initial Catalog=BDESTOQUE;Integrated Security=true");
+            C_CProdutos c_CProdutos = new C_CProdutos();
 
             string command = "SELECT Nome FROM Cadastro_Produto";
-            SqlCommand comando = new SqlCommand(command, sql);
+            SqlCommand comando = new SqlCommand();
             try
             {
-                sql.Open();
+                
                 SqlDataReader reader = comando.ExecuteReader();
 
                 while (reader.Read())

@@ -50,7 +50,11 @@ namespace controle_de_estoque
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string strconn = ("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
+            C_CProdutos c_CProdutos = new C_CProdutos();
+
+            c_CProdutos.CadastroProduto(tbxNome.Text, cbbCategoria.Text, cbbUnidade.Text, tbxPreçoCusto.Text, tbxPreçoVenda.Text, tbxQuantidadeInicial.Text, tbxEstoqueMinimo.Text, tbxFornecedor.Text);
+            
+            /*string strconn = ("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
                          "Initial Catalog=BDESTOQUE;Integrated Security=true");
 
 
@@ -78,7 +82,7 @@ namespace controle_de_estoque
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
+            }*/
         }
     }
 }
