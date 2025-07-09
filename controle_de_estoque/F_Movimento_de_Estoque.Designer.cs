@@ -39,7 +39,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.rdbEntrada = new System.Windows.Forms.RadioButton();
             this.rdbSaida = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
             this.cbbMotivo = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +52,7 @@
             // 
             // btnRegistro
             // 
-            this.btnRegistro.Location = new System.Drawing.Point(297, 362);
+            this.btnRegistro.Location = new System.Drawing.Point(365, 356);
             this.btnRegistro.Name = "btnRegistro";
             this.btnRegistro.Size = new System.Drawing.Size(75, 23);
             this.btnRegistro.TabIndex = 0;
@@ -65,7 +64,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(134, 41);
+            this.label1.Location = new System.Drawing.Point(202, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 16);
             this.label1.TabIndex = 1;
@@ -73,7 +72,7 @@
             // 
             // tbxQuantidade
             // 
-            this.tbxQuantidade.Location = new System.Drawing.Point(227, 194);
+            this.tbxQuantidade.Location = new System.Drawing.Point(295, 188);
             this.tbxQuantidade.Name = "tbxQuantidade";
             this.tbxQuantidade.Size = new System.Drawing.Size(218, 20);
             this.tbxQuantidade.TabIndex = 2;
@@ -82,7 +81,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(130, 195);
+            this.label2.Location = new System.Drawing.Point(198, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 16);
             this.label2.TabIndex = 3;
@@ -92,7 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(164, 235);
+            this.label3.Location = new System.Drawing.Point(232, 229);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 16);
             this.label3.TabIndex = 5;
@@ -102,7 +101,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(130, 289);
+            this.label4.Location = new System.Drawing.Point(198, 283);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 16);
             this.label4.TabIndex = 7;
@@ -111,7 +110,7 @@
             // cbbProduto
             // 
             this.cbbProduto.FormattingEnabled = true;
-            this.cbbProduto.Location = new System.Drawing.Point(159, 60);
+            this.cbbProduto.Location = new System.Drawing.Point(227, 54);
             this.cbbProduto.Name = "cbbProduto";
             this.cbbProduto.Size = new System.Drawing.Size(331, 21);
             this.cbbProduto.TabIndex = 8;
@@ -120,7 +119,7 @@
             // dtpDataMovimentacao
             // 
             this.dtpDataMovimentacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataMovimentacao.Location = new System.Drawing.Point(345, 133);
+            this.dtpDataMovimentacao.Location = new System.Drawing.Point(413, 127);
             this.dtpDataMovimentacao.Name = "dtpDataMovimentacao";
             this.dtpDataMovimentacao.Size = new System.Drawing.Size(145, 20);
             this.dtpDataMovimentacao.TabIndex = 9;
@@ -129,7 +128,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(130, 133);
+            this.label5.Location = new System.Drawing.Point(198, 127);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 16);
             this.label5.TabIndex = 10;
@@ -138,7 +137,7 @@
             // rdbEntrada
             // 
             this.rdbEntrada.AutoSize = true;
-            this.rdbEntrada.Location = new System.Drawing.Point(345, 159);
+            this.rdbEntrada.Location = new System.Drawing.Point(413, 153);
             this.rdbEntrada.Name = "rdbEntrada";
             this.rdbEntrada.Size = new System.Drawing.Size(62, 17);
             this.rdbEntrada.TabIndex = 11;
@@ -150,7 +149,7 @@
             // rdbSaida
             // 
             this.rdbSaida.AutoSize = true;
-            this.rdbSaida.Location = new System.Drawing.Point(424, 159);
+            this.rdbSaida.Location = new System.Drawing.Point(492, 153);
             this.rdbSaida.Name = "rdbSaida";
             this.rdbSaida.Size = new System.Drawing.Size(52, 17);
             this.rdbSaida.TabIndex = 12;
@@ -158,15 +157,6 @@
             this.rdbSaida.Text = "Saida";
             this.rdbSaida.UseVisualStyleBackColor = true;
             this.rdbSaida.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(391, 362);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // cbbMotivo
             // 
@@ -181,7 +171,7 @@
             "Pouco Estoque",
             "",
             ""});
-            this.cbbMotivo.Location = new System.Drawing.Point(227, 234);
+            this.cbbMotivo.Location = new System.Drawing.Point(295, 228);
             this.cbbMotivo.Name = "cbbMotivo";
             this.cbbMotivo.Size = new System.Drawing.Size(218, 21);
             this.cbbMotivo.TabIndex = 14;
@@ -211,7 +201,7 @@
             "Informática",
             "Celulares e Telefonia",
             "Áudio e Vídeo"});
-            this.cbbCategoria.Location = new System.Drawing.Point(159, 106);
+            this.cbbCategoria.Location = new System.Drawing.Point(227, 100);
             this.cbbCategoria.Name = "cbbCategoria";
             this.cbbCategoria.Size = new System.Drawing.Size(331, 21);
             this.cbbCategoria.TabIndex = 18;
@@ -220,7 +210,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(134, 87);
+            this.label6.Location = new System.Drawing.Point(202, 81);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 16);
             this.label6.TabIndex = 17;
@@ -229,7 +219,7 @@
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(227, 261);
+            this.comboBox4.Location = new System.Drawing.Point(295, 255);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(218, 21);
             this.comboBox4.TabIndex = 20;
@@ -239,7 +229,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(156, 262);
+            this.label7.Location = new System.Drawing.Point(224, 256);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 16);
             this.label7.TabIndex = 19;
@@ -247,7 +237,7 @@
             // 
             // tbxFornecedor
             // 
-            this.tbxFornecedor.Location = new System.Drawing.Point(227, 288);
+            this.tbxFornecedor.Location = new System.Drawing.Point(295, 282);
             this.tbxFornecedor.Name = "tbxFornecedor";
             this.tbxFornecedor.Size = new System.Drawing.Size(218, 20);
             this.tbxFornecedor.TabIndex = 21;
@@ -263,7 +253,6 @@
             this.Controls.Add(this.cbbCategoria);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cbbMotivo);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.rdbSaida);
             this.Controls.Add(this.rdbEntrada);
             this.Controls.Add(this.label5);
@@ -300,7 +289,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton rdbEntrada;
         private System.Windows.Forms.RadioButton rdbSaida;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cbbMotivo;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;

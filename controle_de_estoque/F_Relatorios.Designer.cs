@@ -379,6 +379,7 @@
             this.movimentoDeProdutosToolStripMenuItem.Name = "movimentoDeProdutosToolStripMenuItem";
             this.movimentoDeProdutosToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.movimentoDeProdutosToolStripMenuItem.Text = "Movimento de Produtos";
+            this.movimentoDeProdutosToolStripMenuItem.Click += new System.EventHandler(this.movimentoDeProdutosToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 

@@ -15,6 +15,7 @@ namespace controle_de_estoque
     {
         public Form1()
         {
+            
             InitializeComponent();
         }
 
@@ -77,6 +78,9 @@ namespace controle_de_estoque
                         {
                             F_Controle_de_Estoque janelaEstoque = new F_Controle_de_Estoque();
                             janelaEstoque.ShowDialog();
+                            
+                            
+                            
                             
                             
 

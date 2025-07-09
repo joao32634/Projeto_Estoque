@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="C_Janelas.cs" />
     <Compile Include="C_Usuario.cs" />
     <Compile Include="C_Conexao.cs" />
     <Compile Include="C_CProdutos.cs" />

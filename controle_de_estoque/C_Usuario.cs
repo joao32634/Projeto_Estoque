@@ -37,7 +37,7 @@ namespace controle_de_estoque
                     comando.Parameters.Add(new SqlParameter("@senha", senhahash));
                     comando.Parameters.Add(new SqlParameter("@salt", salt));
 
-                    conn.Open();
+                    
                     comando.ExecuteNonQuery();
                     MessageBox.Show("Cadastrado com Sucesso!", " cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

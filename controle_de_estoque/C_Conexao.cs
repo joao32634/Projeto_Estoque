@@ -19,6 +19,8 @@ namespace controle_de_estoque
             string strconn = ("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
     "Initial Catalog=BDESTOQUE;Integrated Security=true");
             SqlConnection conn = new SqlConnection(strconn);
+            conn.Open();
+            
             return conn;
 
         }
@@ -26,7 +28,7 @@ namespace controle_de_estoque
         {
             try
             {
-                conn.Open();
+                
                 c.ExecuteNonQuery();
                 conn.Close();
                 return "ok";
@@ -44,10 +46,11 @@ namespace controle_de_estoque
         }
         public SqlDataReader SelecionarDadosReader(string c, SqlConnection conn)
         {
-            conn.Open();
+            
             SqlCommand command = new SqlCommand(c, conn);
-            SqlDataReader Reader = command.ExecuteReader();
-            return Reader;
+            SqlDataReader reader = command.ExecuteReader();
+            
+            return reader;
         }
 
 

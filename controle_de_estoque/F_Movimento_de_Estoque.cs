@@ -14,17 +14,17 @@ namespace controle_de_estoque
 {
     public partial class F_Movimento_de_Estoque : Form
     {
-        public F_Movimento_de_Estoque(F_Controle_de_Estoque f)
+        public F_Movimento_de_Estoque()
         {
-            f.Visible = false;
+            
             InitializeComponent();
         }
 
         private void relatóriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_Relatorios janela = new F_Relatorios(this);
+            F_Relatorios janela = new F_Relatorios();
             janela.ShowDialog();
-            this.Close();
+            
 
         }
 
@@ -32,16 +32,14 @@ namespace controle_de_estoque
         {
             C_CProdutos c_CProdutos = new C_CProdutos();
 
-            string command = "SELECT Nome FROM Cadastro_Produto";
-            SqlCommand comando = new SqlCommand();
             try
             {
-                
-                SqlDataReader reader = comando.ExecuteReader();
 
-                while (reader.Read())
+                SqlDataReader reader = c_CProdutos.SelecionarNome();
+
+                while(reader.Read())
                 {
-                    string filtro = reader["Nome"].ToString().Trim();
+                    string filtro = reader["Nome"].ToString();
                     cbbProduto.Items.Add(filtro);
                 }
 

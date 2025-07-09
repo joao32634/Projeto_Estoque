@@ -18,7 +18,7 @@ namespace controle_de_estoque
             
             InitializeComponent();
 
-
+            
         }
 
         private void F_Controle_de_Estoque_Load(object sender, EventArgs e)
@@ -43,9 +43,9 @@ namespace controle_de_estoque
 
         private void movimentoDeEstoqueToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_Movimento_de_Estoque janela = new F_Movimento_de_Estoque(this);
+            F_Movimento_de_Estoque janela = new F_Movimento_de_Estoque();
             janela.ShowDialog();
-            this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -83,6 +83,11 @@ namespace controle_de_estoque
             {
                 MessageBox.Show(ex.Message);
             }*/
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

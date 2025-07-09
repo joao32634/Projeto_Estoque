@@ -13,9 +13,9 @@ namespace controle_de_estoque
 {
     public partial class F_Relatorios : Form
     {
-        public F_Relatorios(F_Movimento_de_Estoque f)
+        public F_Relatorios()
         {
-            f.Visible = false;
+            
             InitializeComponent();
         }
 
@@ -63,21 +63,21 @@ namespace controle_de_estoque
 
         private void btnFiltro_Click(object sender, EventArgs e)
         {
-            string strconn = ("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
-"Initial Catalog=BDESTOQUE;Integrated Security=true");
-            SqlConnection conn = new SqlConnection(strconn);
+            /*string strconn = ("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
+ "Initial Catalog=BDESTOQUE;Integrated Security=true");
+             SqlConnection conn = new SqlConnection(strconn);*/
+
+            C_CProdutos c_CProdutos = new C_CProdutos();
 
 
-            if(cbbTipoRelatorio.Text == "Cadastro de Produtos")
-            {
-                String PesquisaNome = tbxFiltro.Text;
 
-                string command = $"select Nome, Categoria, Unidade, Preço_de_Custo, Preço_de_Venda, Quantidade_Inicial, Estoque_Minimo, Fornecedor from dbo.Cadastro_Produto WHERE Categoria LIKE '%{PesquisaNome}%'";
+
                 try
                 {
+                    String PesquisaNome = tbxFiltro.Text;
 
                     //executa o comando SQL e recebendo os dados
-                    SqlDataAdapter da = new SqlDataAdapter(command, conn);
+                    SqlDataAdapter da = c_CProdutos.FiltrarNome(PesquisaNome);
 
                     //instância um DateTable - que servirá de intermediário
                     DataTable dt = new DataTable();
@@ -92,71 +92,38 @@ namespace controle_de_estoque
                     MessageBox.Show(ex.Message, "Relatorios", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-            }
-            if(cbbTipoRelatorio.Text == "Movimento de Produtos")
-            try
-            {
+            if (cbbTipoRelatorio.Text == "Movimento de Produtos")
+            { 
+                try
+                {
                     String PesquisaNome = tbxFiltro.Text;
 
-                    string command = $"select id, Nome, Categoria, Data_de_Movimentacao, Quantidade, Entrada, Saida, Motivo, Fornecedor from dbo.Movimento_Produto WHERE Categoria LIKE '%{PesquisaNome}%'";
 
 
                     //executa o comando SQL e recebendo os dados
-                    SqlDataAdapter da = new SqlDataAdapter(command, conn);
-
+                    SqlDataAdapter da = c_CProdutos.FiltrarNomeMovimento(PesquisaNome);
+    
                 //instância um DateTable - que servirá de intermediário
                 DataTable dt = new DataTable();
 
-                //Preencher o dataGrudView com os dados do dt
-                da.Fill(dt);
+                    //Preencher o dataGrudView com os dados do dt
+                    da.Fill(dt);
 
-                dgvRelatorios.DataSource = dt;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Relatorios", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    dgvRelatorios.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Relatorios", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
 
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
-                        "Initial Catalog=BDESTOQUE;Integrated Security=true");
-            String ID = tbxID.Text = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
-            SqlCommand command = new SqlCommand("UPDATE Cadastro_Produto SET ID = @ID, Nome = @Nome, " +
-                $"Categoria =@Categoria, Unidade =@Unidade, Preço_de_Custo =@Preço_de_Venda, @Quantidade_Inicial =@Quantidade_Inicial, Estoque_Minimo =@Estoque_Minimo, Fornecedor =@Fornecedor  WHERE ID = '{ID}'", conn);
-            try
-            {
-                command.Parameters.Add(new SqlParameter("@ID", tbxID.Text));
-                command.Parameters.Add(new SqlParameter("@Nome", tbxNomeEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Categoria", tbxCategoriaEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Unidade", cbbUnidadeEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Preço_de_Custo", tbxPrecoCustoEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Preço_de_Venda", tbxPrecoVendaEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Quantidade_Inicial", tbxQuantidadeInicialEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Estoque_Minimo", tbxEstoqueMinimoEditar.Text));
-                command.Parameters.Add(new SqlParameter("@Fornecedor", tbxFornecedorEditar.Text));
-
-
-
-
-
-
-
-
-
-                conn.Open();
-                command.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Alteração realizada com Sucesso!", "Editar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Editar", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            String Nome = tbxNomeEditar.Text = dgvRelatorios.CurrentRow.Cells[1].Value.ToString();
+            C_CProdutos c_Cprodutos = new C_CProdutos();
+            c_Cprodutos.EditarProduto(Nome, tbxCategoriaEditar.Text, cbbUnidadeEditar.Text, tbxPrecoCustoEditar.Text, tbxPrecoVendaEditar.Text, tbxQuantidadeInicialEditar.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedorEditar.Text);
         }
 
         private void btnSelecionar_Click(object sender, EventArgs e)
@@ -181,24 +148,9 @@ namespace controle_de_estoque
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
-            "Initial Catalog=BDESTOQUE;Integrated Security=true");
+            C_CProdutos c_CProdutos = new C_CProdutos();
             String id = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
-            SqlCommand command = new SqlCommand("DELETE From Cadastro_Produto WHERE id=@id", conn);
-            try
-            {
-                command.Parameters.Add(new SqlParameter("@id", id));
-
-                conn.Open();
-                command.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Registro Deletado com Sucesso!", "Editar", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Editar", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            c_CProdutos.DeletarProduto(id);
 
         }
 
@@ -268,8 +220,12 @@ namespace controle_de_estoque
         private void cadastroDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             F_Controle_de_Estoque janela = new F_Controle_de_Estoque();
-            janela.ShowDialog();
+            janela.Show();
 
+        }
+
+        private void movimentoDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
         }
     }
 }
