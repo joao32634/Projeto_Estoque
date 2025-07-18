@@ -3,44 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\c_movimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_movimentacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\c_conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\c_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\c_movimentoproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_movimentoproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\c_cprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_cprodutos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\c_pcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_pcompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\f_relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\c_conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\f_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\f_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_movimento_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_relatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|c:\\users\\senacadm\\desktop\\jo\u00E3o marcelo\\projeto_estoque_atual\\controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_controle_de_estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\f_registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\f_registro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\c_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|solutionrelative:controle_de_estoque\\c_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7368AB5C-3588-47DA-BECA-2337C88F23C2}|controle_de_estoque\\controle_de_estoque.csproj|C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\c_janelas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,20 +102,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "C_MovimentoProduto.cs",
+              "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_MovimentoProduto.cs",
+              "RelativeDocumentMoniker": "controle_de_estoque\\C_MovimentoProduto.cs",
+              "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_MovimentoProduto.cs",
+              "RelativeToolTip": "controle_de_estoque\\C_MovimentoProduto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T19:30:16.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "C_PCompra.cs",
+              "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_PCompra.cs",
+              "RelativeDocumentMoniker": "controle_de_estoque\\C_PCompra.cs",
+              "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_PCompra.cs",
+              "RelativeToolTip": "controle_de_estoque\\C_PCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T19:29:41.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "F_Compra.cs",
+              "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Compra.cs",
+              "RelativeDocumentMoniker": "controle_de_estoque\\F_Compra.cs",
+              "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Compra.cs",
+              "RelativeToolTip": "controle_de_estoque\\F_Compra.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T19:27:53.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "F_Compra.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Compra.cs",
+              "RelativeDocumentMoniker": "controle_de_estoque\\F_Compra.cs",
+              "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Compra.cs [Design]",
+              "RelativeToolTip": "controle_de_estoque\\F_Compra.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T19:13:46.945Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "C_Movimentacao.cs",
+              "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_Movimentacao.cs",
+              "RelativeDocumentMoniker": "controle_de_estoque\\C_Movimentacao.cs",
+              "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_Movimentacao.cs",
+              "RelativeToolTip": "controle_de_estoque\\C_Movimentacao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T18:06:16.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "C_CProdutos.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_CProdutos.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\C_CProdutos.cs",
               "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_CProdutos.cs",
               "RelativeToolTip": "controle_de_estoque\\C_CProdutos.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAswIwAAABjAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAADwv0sAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T20:00:45.597Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "F_Controle_de_Estoque.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Controle_de_Estoque.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Controle_de_Estoque.cs",
@@ -108,20 +192,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "F_Movimento_de_Estoque.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Movimento_de_Estoque.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Movimento_de_Estoque.cs",
               "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Movimento_de_Estoque.cs",
               "RelativeToolTip": "controle_de_estoque\\F_Movimento_de_Estoque.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAMwBoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAA2wGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T19:15:37.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "F_Movimento_de_Estoque.cs [Design]",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Movimento_de_Estoque.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Movimento_de_Estoque.cs",
@@ -133,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "F_Relatorios.cs [Design]",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Relatorios.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Relatorios.cs",
@@ -145,33 +229,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "F_Relatorios.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Relatorios.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Relatorios.cs",
               "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Relatorios.cs",
               "RelativeToolTip": "controle_de_estoque\\F_Relatorios.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAArwHsAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwCAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T18:43:38.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "C_Conexao.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_Conexao.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\C_Conexao.cs",
               "ToolTip": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_Conexao.cs",
               "RelativeToolTip": "controle_de_estoque\\C_Conexao.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAuwB8AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T18:39:59.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "F_Controle_de_Estoque.cs [Design]",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Controle_de_Estoque.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Controle_de_Estoque.cs",
@@ -183,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "C_Usuario.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_Usuario.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\C_Usuario.cs",
@@ -191,12 +275,11 @@
               "RelativeToolTip": "controle_de_estoque\\C_Usuario.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T17:19:44.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T17:19:44.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "C_Janelas.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\C_Janelas.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\C_Janelas.cs",
@@ -208,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "F_Registro.cs [Design]",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Registro.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Registro.cs",
@@ -220,7 +303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\Form1.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\Form1.cs",
@@ -232,7 +315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\Program.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\Program.cs",
@@ -244,7 +327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "F_senharecuperar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_senharecuperar.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_senharecuperar.cs",
@@ -255,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\Form1.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\Form1.cs",
@@ -266,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "F_Registro.cs",
               "DocumentMoniker": "C:\\Users\\senacadm\\Desktop\\Jo\u00E3o Marcelo\\Projeto_Estoque_atual\\controle_de_estoque\\F_Registro.cs",
               "RelativeDocumentMoniker": "controle_de_estoque\\F_Registro.cs",

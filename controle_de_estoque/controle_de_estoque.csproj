@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="C_Janelas.cs" />
+    <Compile Include="C_Movimentacao.cs" />
+    <Compile Include="C_PCompra.cs" />
     <Compile Include="C_Usuario.cs" />
     <Compile Include="C_Conexao.cs" />
     <Compile Include="C_CProdutos.cs" />
@@ -56,6 +58,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Compra.Designer.cs">
+      <DependentUpon>F_Compra.cs</DependentUpon>
     </Compile>
     <Compile Include="F_Controle_de_Estoque.cs">
       <SubType>Form</SubType>
@@ -92,6 +100,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Compra.resx">
+      <DependentUpon>F_Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_Controle_de_Estoque.resx">
       <DependentUpon>F_Controle_de_Estoque.cs</DependentUpon>

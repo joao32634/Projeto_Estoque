@@ -71,6 +71,8 @@ namespace controle_de_estoque
 
 
 
+            if (cbbTipoRelatorio.Text == "Produtos")
+            {
 
                 try
                 {
@@ -91,7 +93,7 @@ namespace controle_de_estoque
                 {
                     MessageBox.Show(ex.Message, "Relatorios", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
+            }
             if (cbbTipoRelatorio.Text == "Movimento de Produtos")
             { 
                 try
@@ -121,9 +123,11 @@ namespace controle_de_estoque
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            String produtos = cbbTipoRelatorio.Text;
+            String MovProdutos = cbbTipoRelatorio.Text;
             String Nome = tbxNomeEditar.Text = dgvRelatorios.CurrentRow.Cells[1].Value.ToString();
             C_CProdutos c_Cprodutos = new C_CProdutos();
-            c_Cprodutos.EditarProduto(Nome, tbxCategoriaEditar.Text, cbbUnidadeEditar.Text, tbxPrecoCustoEditar.Text, tbxPrecoVendaEditar.Text, tbxQuantidadeInicialEditar.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedorEditar.Text);
+            c_Cprodutos.EditarProduto(Nome, produtos, MovProdutos, tbxCategoriaEditar.Text, cbbUnidadeEditar.Text, tbxQuantidadeInicialEditar.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedorEditar.Text);
         }
 
         private void btnSelecionar_Click(object sender, EventArgs e)
@@ -132,11 +136,9 @@ namespace controle_de_estoque
             tbxNomeEditar.Text = dgvRelatorios.CurrentRow.Cells[1].Value.ToString();
             tbxCategoriaEditar.Text = dgvRelatorios.CurrentRow.Cells[2].Value.ToString();
             cbbUnidadeEditar.Text = dgvRelatorios.CurrentRow.Cells[3].Value.ToString();
-            tbxPrecoCustoEditar.Text = dgvRelatorios.CurrentRow.Cells[4].Value.ToString();
-            tbxPrecoVendaEditar.Text = dgvRelatorios.CurrentRow.Cells[5].Value.ToString();
-            tbxQuantidadeInicialEditar.Text = dgvRelatorios.CurrentRow.Cells[6].Value.ToString();
-            tbxEstoqueMinimoEditar.Text = dgvRelatorios.CurrentRow.Cells[7].Value.ToString();
-            tbxFornecedorEditar.Text = dgvRelatorios.CurrentRow.Cells[8].Value.ToString();
+            tbxQuantidadeInicialEditar.Text = dgvRelatorios.CurrentRow.Cells[4].Value.ToString();
+            tbxEstoqueMinimoEditar.Text = dgvRelatorios.CurrentRow.Cells[5].Value.ToString();
+            tbxFornecedorEditar.Text = dgvRelatorios.CurrentRow.Cells[6].Value.ToString();
 
 
         }
@@ -149,8 +151,10 @@ namespace controle_de_estoque
         private void btnDeletar_Click(object sender, EventArgs e)
         {
             C_CProdutos c_CProdutos = new C_CProdutos();
+            String Produtos = cbbTipoRelatorio.Text;
+            String MovProdutos = cbbTipoRelatorio.Text;
             String id = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
-            c_CProdutos.DeletarProduto(id);
+            c_CProdutos.DeletarProduto(id, Produtos, MovProdutos);
 
         }
 
@@ -183,7 +187,7 @@ namespace controle_de_estoque
                 }
 
             }
-            if (cbbTipoRelatorio.Text == "Cadastro de Produtos")
+            if (cbbTipoRelatorio.Text == "Produtos")
             {
 
 

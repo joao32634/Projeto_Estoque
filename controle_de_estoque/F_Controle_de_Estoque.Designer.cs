@@ -31,13 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbxNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblCodigoProduto = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbxPreçoCusto = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tbxPreçoVenda = new System.Windows.Forms.TextBox();
+            this.tbxPreco = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tbxQuantidadeInicial = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,7 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.cbbUnidade = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.movimentoDeEstoqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,26 +83,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Cadastro de Produto";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label3.Location = new System.Drawing.Point(247, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Codigo de Produto:";
-            // 
-            // lblCodigoProduto
-            // 
-            this.lblCodigoProduto.AutoSize = true;
-            this.lblCodigoProduto.Location = new System.Drawing.Point(400, 59);
-            this.lblCodigoProduto.Name = "lblCodigoProduto";
-            this.lblCodigoProduto.Size = new System.Drawing.Size(0, 13);
-            this.lblCodigoProduto.TabIndex = 4;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -132,32 +108,12 @@
             this.label5.Text = "Unidade:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // tbxPreçoCusto
+            // tbxPreco
             // 
-            this.tbxPreçoCusto.Location = new System.Drawing.Point(344, 204);
-            this.tbxPreçoCusto.Name = "tbxPreçoCusto";
-            this.tbxPreçoCusto.Size = new System.Drawing.Size(188, 20);
-            this.tbxPreçoCusto.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label6.Location = new System.Drawing.Point(221, 207);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 17);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Preço de Custo:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // tbxPreçoVenda
-            // 
-            this.tbxPreçoVenda.Location = new System.Drawing.Point(344, 241);
-            this.tbxPreçoVenda.Name = "tbxPreçoVenda";
-            this.tbxPreçoVenda.Size = new System.Drawing.Size(188, 20);
-            this.tbxPreçoVenda.TabIndex = 12;
+            this.tbxPreco.Location = new System.Drawing.Point(344, 205);
+            this.tbxPreco.Name = "tbxPreco";
+            this.tbxPreco.Size = new System.Drawing.Size(188, 20);
+            this.tbxPreco.TabIndex = 12;
             // 
             // label7
             // 
@@ -165,7 +121,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label7.Location = new System.Drawing.Point(220, 244);
+            this.label7.Location = new System.Drawing.Point(220, 208);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 17);
             this.label7.TabIndex = 11;
@@ -173,7 +129,7 @@
             // 
             // tbxQuantidadeInicial
             // 
-            this.tbxQuantidadeInicial.Location = new System.Drawing.Point(344, 280);
+            this.tbxQuantidadeInicial.Location = new System.Drawing.Point(344, 244);
             this.tbxQuantidadeInicial.Name = "tbxQuantidadeInicial";
             this.tbxQuantidadeInicial.Size = new System.Drawing.Size(188, 20);
             this.tbxQuantidadeInicial.TabIndex = 14;
@@ -184,7 +140,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(203, 283);
+            this.label8.Location = new System.Drawing.Point(203, 247);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(132, 17);
             this.label8.TabIndex = 13;
@@ -205,7 +161,7 @@
             // 
             // tbxEstoqueMinimo
             // 
-            this.tbxEstoqueMinimo.Location = new System.Drawing.Point(344, 315);
+            this.tbxEstoqueMinimo.Location = new System.Drawing.Point(344, 279);
             this.tbxEstoqueMinimo.Name = "tbxEstoqueMinimo";
             this.tbxEstoqueMinimo.Size = new System.Drawing.Size(188, 20);
             this.tbxEstoqueMinimo.TabIndex = 17;
@@ -216,7 +172,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label9.Location = new System.Drawing.Point(213, 318);
+            this.label9.Location = new System.Drawing.Point(213, 282);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(122, 17);
             this.label9.TabIndex = 16;
@@ -225,7 +181,7 @@
             // 
             // tbxFornecedor
             // 
-            this.tbxFornecedor.Location = new System.Drawing.Point(344, 354);
+            this.tbxFornecedor.Location = new System.Drawing.Point(344, 318);
             this.tbxFornecedor.Name = "tbxFornecedor";
             this.tbxFornecedor.Size = new System.Drawing.Size(188, 20);
             this.tbxFornecedor.TabIndex = 19;
@@ -236,7 +192,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label10.Location = new System.Drawing.Point(174, 354);
+            this.label10.Location = new System.Drawing.Point(174, 318);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(161, 17);
             this.label10.TabIndex = 18;
@@ -271,14 +227,14 @@
             this.button3.Text = "Excluir";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnLimpar
             // 
-            this.button4.Location = new System.Drawing.Point(515, 396);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "Limpar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLimpar.Location = new System.Drawing.Point(515, 396);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 23;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
             // 
             // cbbUnidade
             // 
@@ -317,7 +273,7 @@
             this.BackgroundImage = global::controle_de_estoque.Properties.Resources.jksjfdjs;
             this.ClientSize = new System.Drawing.Size(768, 431);
             this.Controls.Add(this.cbbUnidade);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -328,14 +284,10 @@
             this.Controls.Add(this.cbbCategoria);
             this.Controls.Add(this.tbxQuantidadeInicial);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.tbxPreçoVenda);
+            this.Controls.Add(this.tbxPreco);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.tbxPreçoCusto);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblCodigoProduto);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbxNome);
             this.Controls.Add(this.label1);
@@ -357,13 +309,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbxNome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblCodigoProduto;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbxPreçoCusto;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tbxPreçoVenda;
+        private System.Windows.Forms.TextBox tbxPreco;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbxQuantidadeInicial;
         private System.Windows.Forms.Label label8;
@@ -375,7 +323,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.ComboBox cbbUnidade;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem movimentoDeEstoqueToolStripMenuItem;

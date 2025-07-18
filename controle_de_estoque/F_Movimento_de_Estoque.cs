@@ -39,7 +39,7 @@ namespace controle_de_estoque
 
                 while(reader.Read())
                 {
-                    string filtro = reader["Nome"].ToString();
+                    string filtro = reader["Nome"].ToString().Trim();
                     cbbProduto.Items.Add(filtro);
                 }
 
@@ -54,9 +54,28 @@ namespace controle_de_estoque
 
         private void cbbProduto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            
+            if (cbbProduto.SelectedValue != null)
+            {
+                int produtoId = (int)cbbProduto.SelectedValue;
+
+                // Buscar categoria desse produto
+                string query = "SELECT Categoria FROM Produto WHERE id = @id";
+                using (SqlConnection conn = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;Initial Catalog=BDESTOQUE;Integrated Security=True;"))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", produtoId);
+                    conn.Open();
+                    object result = cmd.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        int categoriaId = Convert.ToInt32(result);
+                        cbbProduto.SelectedValue = categoriaId;
+                    }
+                }
             }
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -38,14 +38,10 @@
             this.tbxCategoriaEditar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbxPrecoCustoEditar = new System.Windows.Forms.TextBox();
             this.cbbUnidadeEditar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbxQuantidadeInicialEditar = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tbxPrecoVendaEditar = new System.Windows.Forms.TextBox();
             this.tbxFornecedorEditar = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -99,7 +95,7 @@
             // 
             this.cbbTipoRelatorio.FormattingEnabled = true;
             this.cbbTipoRelatorio.Items.AddRange(new object[] {
-            "Cadastro de Produtos",
+            "Produtos",
             "Movimento de Produtos"});
             this.cbbTipoRelatorio.Location = new System.Drawing.Point(177, 47);
             this.cbbTipoRelatorio.Name = "cbbTipoRelatorio";
@@ -169,14 +165,6 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Nome:";
             // 
-            // tbxPrecoCustoEditar
-            // 
-            this.tbxPrecoCustoEditar.AcceptsTab = true;
-            this.tbxPrecoCustoEditar.Location = new System.Drawing.Point(1105, 295);
-            this.tbxPrecoCustoEditar.Name = "tbxPrecoCustoEditar";
-            this.tbxPrecoCustoEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxPrecoCustoEditar.TabIndex = 17;
-            // 
             // cbbUnidadeEditar
             // 
             this.cbbUnidadeEditar.FormattingEnabled = true;
@@ -193,11 +181,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(966, 295);
+            this.label6.Location = new System.Drawing.Point(1001, 295);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 18);
+            this.label6.Size = new System.Drawing.Size(98, 18);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Preço_de_Custo:";
+            this.label6.Text = "Quantidade:";
             // 
             // label7
             // 
@@ -212,43 +200,15 @@
             // tbxQuantidadeInicialEditar
             // 
             this.tbxQuantidadeInicialEditar.AcceptsTab = true;
-            this.tbxQuantidadeInicialEditar.Location = new System.Drawing.Point(1105, 347);
+            this.tbxQuantidadeInicialEditar.Location = new System.Drawing.Point(1105, 296);
             this.tbxQuantidadeInicialEditar.Name = "tbxQuantidadeInicialEditar";
             this.tbxQuantidadeInicialEditar.Size = new System.Drawing.Size(166, 20);
             this.tbxQuantidadeInicialEditar.TabIndex = 21;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(953, 347);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 18);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Quantidade_Inicial:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(963, 320);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 18);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "Preço_de_Venda:";
-            // 
-            // tbxPrecoVendaEditar
-            // 
-            this.tbxPrecoVendaEditar.AcceptsTab = true;
-            this.tbxPrecoVendaEditar.Location = new System.Drawing.Point(1105, 321);
-            this.tbxPrecoVendaEditar.Name = "tbxPrecoVendaEditar";
-            this.tbxPrecoVendaEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxPrecoVendaEditar.TabIndex = 22;
-            // 
             // tbxFornecedorEditar
             // 
             this.tbxFornecedorEditar.AcceptsTab = true;
-            this.tbxFornecedorEditar.Location = new System.Drawing.Point(1105, 399);
+            this.tbxFornecedorEditar.Location = new System.Drawing.Point(1105, 348);
             this.tbxFornecedorEditar.Name = "tbxFornecedorEditar";
             this.tbxFornecedorEditar.Size = new System.Drawing.Size(166, 20);
             this.tbxFornecedorEditar.TabIndex = 26;
@@ -257,7 +217,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(926, 398);
+            this.label10.Location = new System.Drawing.Point(926, 347);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(179, 18);
             this.label10.TabIndex = 24;
@@ -267,7 +227,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(963, 372);
+            this.label11.Location = new System.Drawing.Point(963, 321);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(139, 18);
             this.label11.TabIndex = 23;
@@ -276,7 +236,7 @@
             // tbxEstoqueMinimoEditar
             // 
             this.tbxEstoqueMinimoEditar.AcceptsTab = true;
-            this.tbxEstoqueMinimoEditar.Location = new System.Drawing.Point(1105, 373);
+            this.tbxEstoqueMinimoEditar.Location = new System.Drawing.Point(1105, 322);
             this.tbxEstoqueMinimoEditar.Name = "tbxEstoqueMinimoEditar";
             this.tbxEstoqueMinimoEditar.Size = new System.Drawing.Size(166, 20);
             this.tbxEstoqueMinimoEditar.TabIndex = 27;
@@ -286,7 +246,7 @@
             this.btnEditar.BackColor = System.Drawing.Color.Transparent;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(1188, 439);
+            this.btnEditar.Location = new System.Drawing.Point(1195, 388);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(83, 28);
             this.btnEditar.TabIndex = 28;
@@ -307,7 +267,7 @@
             this.btnSelecionar.BackColor = System.Drawing.Color.Transparent;
             this.btnSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSelecionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelecionar.Location = new System.Drawing.Point(1008, 439);
+            this.btnSelecionar.Location = new System.Drawing.Point(1015, 388);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(84, 28);
             this.btnSelecionar.TabIndex = 30;
@@ -338,7 +298,7 @@
             this.btnDeletar.BackColor = System.Drawing.Color.Transparent;
             this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletar.Location = new System.Drawing.Point(1098, 439);
+            this.btnDeletar.Location = new System.Drawing.Point(1105, 388);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(84, 28);
             this.btnDeletar.TabIndex = 33;
@@ -403,11 +363,7 @@
             this.Controls.Add(this.tbxFornecedorEditar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.tbxPrecoVendaEditar);
             this.Controls.Add(this.tbxQuantidadeInicialEditar);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.tbxPrecoCustoEditar);
             this.Controls.Add(this.cbbUnidadeEditar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
@@ -446,14 +402,10 @@
         private System.Windows.Forms.TextBox tbxCategoriaEditar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbxPrecoCustoEditar;
         private System.Windows.Forms.ComboBox cbbUnidadeEditar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbxQuantidadeInicialEditar;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox tbxPrecoVendaEditar;
         private System.Windows.Forms.TextBox tbxFornecedorEditar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
