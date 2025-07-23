@@ -11,17 +11,16 @@ using System.Windows.Forms;
 
 namespace controle_de_estoque
 {
-    public partial class F_Compra : Form
+    public partial class F_Venda : Form
     {
-        public F_Compra()
+        public F_Venda()
         {
             InitializeComponent();
         }
 
-        private void F_Compra_Load(object sender, EventArgs e)
+        private void F_Venda_Load(object sender, EventArgs e)
         {
             C_CProdutos c_CProdutos = new C_CProdutos();
-
             try
             {
 
@@ -42,20 +41,10 @@ namespace controle_de_estoque
             {
                 MessageBox.Show(ex.Message);
             }
-
-
         }
 
-        private void btnComprar_Click(object sender, EventArgs e)
+        private void cbbProduto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            C_PCompra c_PCompra = new C_PCompra();
-            string[] partes = cbbProduto.Text.Split('-');
-            string idProduto = partes[0].Trim();
-            string preco = tbxPreco.Text;
-            string Quantidade = tbxQuantidade.Text.Trim();
-            MessageBox.Show($"{idProduto} {preco}");
-            c_PCompra.CompraProduto(idProduto, preco, Quantidade);
-
         }
     }
 }

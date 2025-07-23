@@ -53,6 +53,7 @@
     <Compile Include="C_Conexao.cs" />
     <Compile Include="C_CProdutos.cs" />
     <Compile Include="C_MovimentoProduto.cs" />
+    <Compile Include="C_Venda.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +96,12 @@
     <Compile Include="F_senharecuperar.Designer.cs">
       <DependentUpon>F_senharecuperar.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_Venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Venda.Designer.cs">
+      <DependentUpon>F_Venda.cs</DependentUpon>
+    </Compile>
     <Compile Include="PasswordHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="F_senharecuperar.resx">
       <DependentUpon>F_senharecuperar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_Venda.resx">
+      <DependentUpon>F_Venda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -162,6 +172,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\jksjfdjs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-background-with-online-sell-and-shipping-vector-14808831.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-view-toy-shopping-cart-with-boxes-gift-red-background-copy-space-text-design_339191-203.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

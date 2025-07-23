@@ -69,5 +69,26 @@ namespace controle_de_estoque.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap red_background_with_online_sell_and_shipping_vector_14808831 {
+            get {
+                object obj = ResourceManager.GetObject("red-background-with-online-sell-and-shipping-vector-14808831", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap top_view_toy_shopping_cart_with_boxes_gift_red_background_copy_space_text_design_339191_203 {
+            get {
+                object obj = ResourceManager.GetObject("top-view-toy-shopping-cart-with-boxes-gift-red-background-copy-space-text-design_" +
+                        "339191-203", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -95,8 +95,9 @@
             // 
             this.cbbTipoRelatorio.FormattingEnabled = true;
             this.cbbTipoRelatorio.Items.AddRange(new object[] {
-            "Produtos",
-            "Movimento de Produtos"});
+            "Produto",
+            "Movimento de Produtos",
+            "Compra"});
             this.cbbTipoRelatorio.Location = new System.Drawing.Point(177, 47);
             this.cbbTipoRelatorio.Name = "cbbTipoRelatorio";
             this.cbbTipoRelatorio.Size = new System.Drawing.Size(166, 21);

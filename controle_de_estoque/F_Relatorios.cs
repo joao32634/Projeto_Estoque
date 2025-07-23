@@ -118,16 +118,42 @@ namespace controle_de_estoque
                     MessageBox.Show(ex.Message, "Relatorios", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            if (cbbTipoRelatorio.Text == "Compra")
+            {
+                try
+                {
+                    String PesquisaNome = tbxFiltro.Text;
+
+
+
+                    //executa o comando SQL e recebendo os dados
+                    SqlDataAdapter da = c_CProdutos.FiltrarProdutoCompra(PesquisaNome);
+
+                    //instância um DateTable - que servirá de intermediário
+                    DataTable dt = new DataTable();
+
+                    //Preencher o dataGrudView com os dados do dt
+                    da.Fill(dt);
+
+                    dgvRelatorios.DataSource = dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Relatorios", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
 
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            C_CProdutos c_Cprodutos = new C_CProdutos();
+            String Compra = cbbTipoRelatorio.Text;
             String produtos = cbbTipoRelatorio.Text;
             String MovProdutos = cbbTipoRelatorio.Text;
-            String Nome = tbxNomeEditar.Text = dgvRelatorios.CurrentRow.Cells[1].Value.ToString();
-            C_CProdutos c_Cprodutos = new C_CProdutos();
-            c_Cprodutos.EditarProduto(Nome, produtos, MovProdutos, tbxCategoriaEditar.Text, cbbUnidadeEditar.Text, tbxQuantidadeInicialEditar.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedorEditar.Text);
+            String Nome = tbxID.Text = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
+            c_Cprodutos.EditarProduto(Nome, produtos, MovProdutos, Compra,tbxCategoriaEditar.Text, cbbUnidadeEditar.Text, tbxQuantidadeInicialEditar.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedorEditar.Text);
         }
 
         private void btnSelecionar_Click(object sender, EventArgs e)
@@ -151,10 +177,11 @@ namespace controle_de_estoque
         private void btnDeletar_Click(object sender, EventArgs e)
         {
             C_CProdutos c_CProdutos = new C_CProdutos();
+            String Compra = cbbTipoRelatorio.Text; 
             String Produtos = cbbTipoRelatorio.Text;
             String MovProdutos = cbbTipoRelatorio.Text;
             String id = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
-            c_CProdutos.DeletarProduto(id, Produtos, MovProdutos);
+            c_CProdutos.DeletarProduto(id, Produtos, MovProdutos, Compra);
 
         }
 
@@ -187,7 +214,7 @@ namespace controle_de_estoque
                 }
 
             }
-            if (cbbTipoRelatorio.Text == "Produtos")
+            if (cbbTipoRelatorio.Text == "Produto")
             {
 
 
@@ -213,6 +240,33 @@ namespace controle_de_estoque
                     MessageBox.Show(ex.Message, "Listar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            if (cbbTipoRelatorio.Text == "Compra")
+            {
+
+
+                try
+                {
+
+
+
+                    //executa o comando SQL e recebendo os dados
+                    SqlDataAdapter da = c_CProdutos.ProdutoCompra();
+
+                    //instância um DateTable - que servirá de intermediário
+                    DataTable dt = new DataTable();
+
+                    //Preencher o dataGrudView com os dados do dt
+                    da.Fill(dt);
+
+                    dgvRelatorios.DataSource = dt;
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Listar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
 
         }
 

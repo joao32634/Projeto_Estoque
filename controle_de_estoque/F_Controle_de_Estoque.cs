@@ -89,5 +89,17 @@ namespace controle_de_estoque
         {
 
         }
+
+        private void compraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Compra janela = new F_Compra();
+            janela.ShowDialog();
+        }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_Venda janela = new F_Venda();
+            janela.ShowDialog();
+        }
     }
 }

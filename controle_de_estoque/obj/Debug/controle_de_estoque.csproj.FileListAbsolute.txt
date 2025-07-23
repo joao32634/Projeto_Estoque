@@ -57,3 +57,4 @@ C:\Users\senacadm\Desktop\João Marcelo\Projeto_Estoque_atual\controle_de_estoqu
 C:\Users\senacadm\Desktop\João Marcelo\Projeto_Estoque_atual\controle_de_estoque\obj\Debug\controle_de_estoque.exe
 C:\Users\senacadm\Desktop\João Marcelo\Projeto_Estoque_atual\controle_de_estoque\obj\Debug\controle_de_estoque.pdb
 C:\Users\senacadm\Desktop\João Marcelo\Projeto_Estoque_atual\controle_de_estoque\obj\Debug\controle_de_estoque.F_Compra.resources
+C:\Users\senacadm\Desktop\João Marcelo\Projeto_Estoque_atual\controle_de_estoque\obj\Debug\controle_de_estoque.F_Venda.resources

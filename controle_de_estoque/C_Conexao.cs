@@ -35,7 +35,7 @@ namespace controle_de_estoque
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "modificarDados");
                 return "erro";
             }
         }
