@@ -43,7 +43,9 @@ namespace controle_de_estoque
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            string usuario = tbxusuario.Text;
+            F_Controle_de_Estoque janela = new F_Controle_de_Estoque();
+            janela.ShowDialog();
+            /*string usuario = tbxusuario.Text;
             string senha = tbxsenha.Text;
 
 
@@ -96,7 +98,7 @@ namespace controle_de_estoque
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
     }
 }

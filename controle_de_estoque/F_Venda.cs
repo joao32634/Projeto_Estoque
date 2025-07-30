@@ -46,5 +46,17 @@ namespace controle_de_estoque
         private void cbbProduto_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
+
+        private void btnComprar_Click(object sender, EventArgs e)
+        {
+            C_Venda c_Venda = new C_Venda();
+            string[] partes = cbbProduto.Text.Split('-');
+            string idProduto = partes[0].Trim();
+            string preco = tbxPreco.Text;
+            string Quantidade = tbxQuantidade.Text.Trim();
+            MessageBox.Show($"{idProduto} {preco}");
+            c_Venda.VendaProduto(idProduto, preco, Quantidade);
+
+        }
     }
 }

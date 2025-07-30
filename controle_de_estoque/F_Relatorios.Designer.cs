@@ -35,21 +35,15 @@
             this.dgvRelatorios = new System.Windows.Forms.DataGridView();
             this.tbxFiltro = new System.Windows.Forms.TextBox();
             this.btnFiltro = new System.Windows.Forms.Button();
-            this.tbxCategoriaEditar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cbbUnidadeEditar = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbxQuantidadeInicialEditar = new System.Windows.Forms.TextBox();
-            this.tbxFornecedorEditar = new System.Windows.Forms.TextBox();
+            this.tbxQuantidade = new System.Windows.Forms.TextBox();
+            this.tbxFornecedor = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.tbxEstoqueMinimoEditar = new System.Windows.Forms.TextBox();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.tbxNomeEditar = new System.Windows.Forms.TextBox();
             this.btnSelecionar = new System.Windows.Forms.Button();
-            this.tbxID = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -57,6 +51,14 @@
             this.cadastroDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.movimentoDeProdutosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.cbbProdutos = new System.Windows.Forms.ComboBox();
+            this.cbbCategoria = new System.Windows.Forms.ComboBox();
+            this.dtpData = new System.Windows.Forms.DateTimePicker();
+            this.rdbCompra = new System.Windows.Forms.RadioButton();
+            this.rdbVenda = new System.Windows.Forms.RadioButton();
+            this.tbxPreco = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRelatorios)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -96,8 +98,8 @@
             this.cbbTipoRelatorio.FormattingEnabled = true;
             this.cbbTipoRelatorio.Items.AddRange(new object[] {
             "Produto",
-            "Movimento de Produtos",
-            "Compra"});
+            "Compra",
+            "Venda"});
             this.cbbTipoRelatorio.Location = new System.Drawing.Point(177, 47);
             this.cbbTipoRelatorio.Name = "cbbTipoRelatorio";
             this.cbbTipoRelatorio.Size = new System.Drawing.Size(166, 21);
@@ -138,51 +140,21 @@
             this.btnFiltro.UseVisualStyleBackColor = false;
             this.btnFiltro.Click += new System.EventHandler(this.btnFiltro_Click);
             // 
-            // tbxCategoriaEditar
-            // 
-            this.tbxCategoriaEditar.AcceptsTab = true;
-            this.tbxCategoriaEditar.Location = new System.Drawing.Point(1105, 242);
-            this.tbxCategoriaEditar.Name = "tbxCategoriaEditar";
-            this.tbxCategoriaEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxCategoriaEditar.TabIndex = 13;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1017, 242);
+            this.label4.Location = new System.Drawing.Point(946, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 18);
             this.label4.TabIndex = 11;
             this.label4.Text = "Categoria:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1045, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 18);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Nome:";
-            // 
-            // cbbUnidadeEditar
-            // 
-            this.cbbUnidadeEditar.FormattingEnabled = true;
-            this.cbbUnidadeEditar.Items.AddRange(new object[] {
-            "Unidade",
-            "Kilogram",
-            "Caixa"});
-            this.cbbUnidadeEditar.Location = new System.Drawing.Point(1105, 268);
-            this.cbbUnidadeEditar.Name = "cbbUnidadeEditar";
-            this.cbbUnidadeEditar.Size = new System.Drawing.Size(166, 21);
-            this.cbbUnidadeEditar.TabIndex = 16;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1001, 295);
+            this.label6.Location = new System.Drawing.Point(934, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 18);
             this.label6.TabIndex = 15;
@@ -192,62 +164,54 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1028, 268);
+            this.label7.Location = new System.Drawing.Point(1154, 241);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 18);
+            this.label7.Size = new System.Drawing.Size(58, 18);
             this.label7.TabIndex = 14;
-            this.label7.Text = "Unidade:";
+            this.label7.Text = "Preço:";
             // 
-            // tbxQuantidadeInicialEditar
+            // tbxQuantidade
             // 
-            this.tbxQuantidadeInicialEditar.AcceptsTab = true;
-            this.tbxQuantidadeInicialEditar.Location = new System.Drawing.Point(1105, 296);
-            this.tbxQuantidadeInicialEditar.Name = "tbxQuantidadeInicialEditar";
-            this.tbxQuantidadeInicialEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxQuantidadeInicialEditar.TabIndex = 21;
+            this.tbxQuantidade.AcceptsTab = true;
+            this.tbxQuantidade.Location = new System.Drawing.Point(1034, 241);
+            this.tbxQuantidade.Name = "tbxQuantidade";
+            this.tbxQuantidade.Size = new System.Drawing.Size(110, 20);
+            this.tbxQuantidade.TabIndex = 21;
             // 
-            // tbxFornecedorEditar
+            // tbxFornecedor
             // 
-            this.tbxFornecedorEditar.AcceptsTab = true;
-            this.tbxFornecedorEditar.Location = new System.Drawing.Point(1105, 348);
-            this.tbxFornecedorEditar.Name = "tbxFornecedorEditar";
-            this.tbxFornecedorEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxFornecedorEditar.TabIndex = 26;
+            this.tbxFornecedor.AcceptsTab = true;
+            this.tbxFornecedor.Location = new System.Drawing.Point(1034, 303);
+            this.tbxFornecedor.Name = "tbxFornecedor";
+            this.tbxFornecedor.Size = new System.Drawing.Size(237, 20);
+            this.tbxFornecedor.TabIndex = 26;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(926, 347);
+            this.label10.Location = new System.Drawing.Point(928, 303);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(179, 18);
+            this.label10.Size = new System.Drawing.Size(100, 18);
             this.label10.TabIndex = 24;
-            this.label10.Text = "Fornecedor(Opcional):";
+            this.label10.Text = "Fornecedor:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(963, 321);
+            this.label11.Location = new System.Drawing.Point(980, 277);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 18);
+            this.label11.Size = new System.Drawing.Size(48, 18);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Estoque_Minimo:";
-            // 
-            // tbxEstoqueMinimoEditar
-            // 
-            this.tbxEstoqueMinimoEditar.AcceptsTab = true;
-            this.tbxEstoqueMinimoEditar.Location = new System.Drawing.Point(1105, 322);
-            this.tbxEstoqueMinimoEditar.Name = "tbxEstoqueMinimoEditar";
-            this.tbxEstoqueMinimoEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxEstoqueMinimoEditar.TabIndex = 27;
+            this.label11.Text = "Data:";
             // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Transparent;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(1195, 388);
+            this.btnEditar.Location = new System.Drawing.Point(1061, 490);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(83, 28);
             this.btnEditar.TabIndex = 28;
@@ -255,20 +219,12 @@
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // tbxNomeEditar
-            // 
-            this.tbxNomeEditar.AcceptsTab = true;
-            this.tbxNomeEditar.Location = new System.Drawing.Point(1105, 216);
-            this.tbxNomeEditar.Name = "tbxNomeEditar";
-            this.tbxNomeEditar.Size = new System.Drawing.Size(166, 20);
-            this.tbxNomeEditar.TabIndex = 29;
-            // 
             // btnSelecionar
             // 
             this.btnSelecionar.BackColor = System.Drawing.Color.Transparent;
             this.btnSelecionar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnSelecionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelecionar.Location = new System.Drawing.Point(1015, 388);
+            this.btnSelecionar.Location = new System.Drawing.Point(1162, 490);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(84, 28);
             this.btnSelecionar.TabIndex = 30;
@@ -276,30 +232,22 @@
             this.btnSelecionar.UseVisualStyleBackColor = false;
             this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
-            // tbxID
-            // 
-            this.tbxID.AcceptsTab = true;
-            this.tbxID.Location = new System.Drawing.Point(1105, 190);
-            this.tbxID.Name = "tbxID";
-            this.tbxID.Size = new System.Drawing.Size(166, 20);
-            this.tbxID.TabIndex = 32;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(1070, 190);
+            this.label12.Location = new System.Drawing.Point(959, 187);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 18);
+            this.label12.Size = new System.Drawing.Size(73, 18);
             this.label12.TabIndex = 31;
-            this.label12.Text = "ID:";
+            this.label12.Text = "Produto:";
             // 
             // btnDeletar
             // 
             this.btnDeletar.BackColor = System.Drawing.Color.Transparent;
             this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletar.Location = new System.Drawing.Point(1105, 388);
+            this.btnDeletar.Location = new System.Drawing.Point(956, 490);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(84, 28);
             this.btnDeletar.TabIndex = 33;
@@ -313,7 +261,7 @@
             this.gerenciamentoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1283, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1432, 24);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -348,29 +296,110 @@
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1068, 107);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(191, 24);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "Gerenciar Produtos";
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Location = new System.Drawing.Point(1117, 343);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(84, 28);
+            this.btnRegistrar.TabIndex = 36;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // cbbProdutos
+            // 
+            this.cbbProdutos.FormattingEnabled = true;
+            this.cbbProdutos.Location = new System.Drawing.Point(1034, 187);
+            this.cbbProdutos.Name = "cbbProdutos";
+            this.cbbProdutos.Size = new System.Drawing.Size(290, 21);
+            this.cbbProdutos.TabIndex = 37;
+            this.cbbProdutos.SelectedIndexChanged += new System.EventHandler(this.cbbProdutos_SelectedIndexChanged);
+            // 
+            // cbbCategoria
+            // 
+            this.cbbCategoria.FormattingEnabled = true;
+            this.cbbCategoria.Location = new System.Drawing.Point(1034, 214);
+            this.cbbCategoria.Name = "cbbCategoria";
+            this.cbbCategoria.Size = new System.Drawing.Size(290, 21);
+            this.cbbCategoria.TabIndex = 38;
+            this.cbbCategoria.SelectedIndexChanged += new System.EventHandler(this.cbbCategoria_SelectedIndexChanged);
+            // 
+            // dtpData
+            // 
+            this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpData.Location = new System.Drawing.Point(1034, 277);
+            this.dtpData.Name = "dtpData";
+            this.dtpData.Size = new System.Drawing.Size(86, 20);
+            this.dtpData.TabIndex = 39;
+            // 
+            // rdbCompra
+            // 
+            this.rdbCompra.AutoSize = true;
+            this.rdbCompra.Location = new System.Drawing.Point(1140, 277);
+            this.rdbCompra.Name = "rdbCompra";
+            this.rdbCompra.Size = new System.Drawing.Size(61, 17);
+            this.rdbCompra.TabIndex = 40;
+            this.rdbCompra.TabStop = true;
+            this.rdbCompra.Text = "Compra";
+            this.rdbCompra.UseVisualStyleBackColor = true;
+            // 
+            // rdbVenda
+            // 
+            this.rdbVenda.AutoSize = true;
+            this.rdbVenda.Location = new System.Drawing.Point(1231, 277);
+            this.rdbVenda.Name = "rdbVenda";
+            this.rdbVenda.Size = new System.Drawing.Size(56, 17);
+            this.rdbVenda.TabIndex = 41;
+            this.rdbVenda.TabStop = true;
+            this.rdbVenda.Text = "Venda";
+            this.rdbVenda.UseVisualStyleBackColor = true;
+            // 
+            // tbxPreco
+            // 
+            this.tbxPreco.AcceptsTab = true;
+            this.tbxPreco.Location = new System.Drawing.Point(1214, 241);
+            this.tbxPreco.Name = "tbxPreco";
+            this.tbxPreco.Size = new System.Drawing.Size(110, 20);
+            this.tbxPreco.TabIndex = 42;
+            // 
             // F_Relatorios
             // 
             this.AcceptButton = this.btnFiltro;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 636);
+            this.ClientSize = new System.Drawing.Size(1432, 636);
+            this.Controls.Add(this.tbxPreco);
+            this.Controls.Add(this.rdbVenda);
+            this.Controls.Add(this.rdbCompra);
+            this.Controls.Add(this.dtpData);
+            this.Controls.Add(this.cbbCategoria);
+            this.Controls.Add(this.cbbProdutos);
+            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnDeletar);
-            this.Controls.Add(this.tbxID);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnSelecionar);
-            this.Controls.Add(this.tbxNomeEditar);
             this.Controls.Add(this.btnEditar);
-            this.Controls.Add(this.tbxEstoqueMinimoEditar);
-            this.Controls.Add(this.tbxFornecedorEditar);
+            this.Controls.Add(this.tbxFornecedor);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.tbxQuantidadeInicialEditar);
-            this.Controls.Add(this.cbbUnidadeEditar);
+            this.Controls.Add(this.tbxQuantidade);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.tbxCategoriaEditar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnFiltro);
             this.Controls.Add(this.tbxFiltro);
             this.Controls.Add(this.dgvRelatorios);
@@ -400,21 +429,15 @@
         private System.Windows.Forms.DataGridView dgvRelatorios;
         private System.Windows.Forms.TextBox tbxFiltro;
         private System.Windows.Forms.Button btnFiltro;
-        private System.Windows.Forms.TextBox tbxCategoriaEditar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cbbUnidadeEditar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbxQuantidadeInicialEditar;
-        private System.Windows.Forms.TextBox tbxFornecedorEditar;
+        private System.Windows.Forms.TextBox tbxQuantidade;
+        private System.Windows.Forms.TextBox tbxFornecedor;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox tbxEstoqueMinimoEditar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.TextBox tbxNomeEditar;
         private System.Windows.Forms.Button btnSelecionar;
-        private System.Windows.Forms.TextBox tbxID;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -422,5 +445,13 @@
         private System.Windows.Forms.ToolStripMenuItem cadastroDeProdutosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem movimentoDeProdutosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatóriosToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.ComboBox cbbProdutos;
+        private System.Windows.Forms.ComboBox cbbCategoria;
+        private System.Windows.Forms.DateTimePicker dtpData;
+        private System.Windows.Forms.RadioButton rdbCompra;
+        private System.Windows.Forms.RadioButton rdbVenda;
+        private System.Windows.Forms.TextBox tbxPreco;
     }
 }

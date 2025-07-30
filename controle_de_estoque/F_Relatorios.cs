@@ -45,9 +45,33 @@ namespace controle_de_estoque
             {
                 MessageBox.Show(ex.Message, "Listar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            try
+            {
+
+              
+
+                    SqlDataReader reader = c_CProdutos.SelecionarNome();
+
+                    while (reader.Read())
+                    {
+                        string nome = reader["Nome"].ToString().Trim();
+                        string id = reader["id"].ToString().Trim();
+                        string idNome = $"{id} - {nome}"; 
+                        cbbProdutos.Items.Add(idNome);
+                    }
+
+
+                
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
-            
+
 
         private void tbxFiltros_TextChanged(object sender, EventArgs e)
         {
@@ -148,23 +172,23 @@ namespace controle_de_estoque
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            C_CProdutos c_Cprodutos = new C_CProdutos();
+           /* C_CProdutos c_Cprodutos = new C_CProdutos();
             String Compra = cbbTipoRelatorio.Text;
             String produtos = cbbTipoRelatorio.Text;
             String MovProdutos = cbbTipoRelatorio.Text;
             String Nome = tbxID.Text = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
-            c_Cprodutos.EditarProduto(Nome, produtos, MovProdutos, Compra,tbxCategoriaEditar.Text, cbbUnidadeEditar.Text, tbxQuantidadeInicialEditar.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedorEditar.Text);
+            c_Cprodutos.EditarProduto(Nome, produtos, MovProdutos, Compra,tbxCategoriaEditar.Text, cbbPreco.Text, tbxQuantidade.Text, tbxEstoqueMinimoEditar.Text, tbxFornecedor.Text);*/
         }
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            tbxID.Text = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
+            /*tbxID.Text = dgvRelatorios.CurrentRow.Cells[0].Value.ToString();
             tbxNomeEditar.Text = dgvRelatorios.CurrentRow.Cells[1].Value.ToString();
             tbxCategoriaEditar.Text = dgvRelatorios.CurrentRow.Cells[2].Value.ToString();
-            cbbUnidadeEditar.Text = dgvRelatorios.CurrentRow.Cells[3].Value.ToString();
-            tbxQuantidadeInicialEditar.Text = dgvRelatorios.CurrentRow.Cells[4].Value.ToString();
+            cbbPreco.Text = dgvRelatorios.CurrentRow.Cells[3].Value.ToString();
+            tbxQuantidade.Text = dgvRelatorios.CurrentRow.Cells[4].Value.ToString();
             tbxEstoqueMinimoEditar.Text = dgvRelatorios.CurrentRow.Cells[5].Value.ToString();
-            tbxFornecedorEditar.Text = dgvRelatorios.CurrentRow.Cells[6].Value.ToString();
+            tbxFornecedor.Text = dgvRelatorios.CurrentRow.Cells[6].Value.ToString();*/
 
 
         }
@@ -284,6 +308,53 @@ namespace controle_de_estoque
 
         private void movimentoDeProdutosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            C_CProdutos c_CProdutos = new C_CProdutos();
+
+            string[] partes = cbbProdutos.Text.Split('-');
+            int produtoId = Convert.ToInt32(partes[0].Trim());
+            int qtd = Convert.ToInt32(tbxQuantidade.Text);
+            float PC = Convert.ToSingle(tbxPreco.Text);
+            c_CProdutos.RegistrarProdutoCompra(produtoId, cbbCategoria.Text, PC, qtd, dtpData,  tbxFornecedor.Text, rdbCompra.Text);
+
+        }
+
+        private void cbbProdutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+           
+                string[] partes = cbbProdutos.Text.Split('-');
+                int produtoId = Convert.ToInt32(partes[0].Trim());
+            MessageBox.Show($"{produtoId}");
+            //int produtoId = (int)cbbProdutos.SelectedValue;
+
+            // Buscar categoria desse produto
+            string query = "SELECT Categoria, Preco FROM Produto WHERE id = @id";
+                using (SqlConnection conn = new SqlConnection("Data Source=SOB041982L4B1PC\\SQLEXPRESS;" +
+                    "Initial Catalog=BDESTOQUE;Integrated Security=True;"))
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", produtoId);
+                    conn.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        cbbCategoria.Text = reader["Categoria"].ToString();
+                        tbxPreco.Text = reader["Preco"].ToString();
+                    }
+
+                }
+            
+
+        }
+
+        private void cbbCategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,7 +40,7 @@ namespace controle_de_estoque
                 comando.Parameters.Add(new SqlParameter("@Fornecedor", F));
 
                 string verificacao = C_Conexao.modificarDados(comando, conn);
-                if(verificacao == "ok")
+                if (verificacao == "ok")
                 {
                     MessageBox.Show("Produto Cadastrado com Sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -111,7 +111,7 @@ namespace controle_de_estoque
         public SqlDataAdapter ProdutoCompra()
         {
             SqlConnection conn = C_Conexao.AbrirConexao();
-            string command = "Select id, id_Produto, Preco_Compra, Quantidade From PCompra";
+            string command = "SELECT p.nome,  pc.Preco_Compra, pc.Quantidade FROM PCompra pc JOIN Produto p ON pc.id_Produto = p.id;";
             SqlDataAdapter da = C_Conexao.SelecionarDados(command, conn);
             conn.Close();
             return da;
@@ -122,7 +122,7 @@ namespace controle_de_estoque
         {
             SqlConnection conn = C_Conexao.AbrirConexao();
             string command = $"select id, Nome, Categoria, Unidade, Quantidade, Estoque_Minimo, Fornecedor from dbo.Produto WHERE Nome LIKE '%{PesquisaNome}%'";
-            SqlDataAdapter da = C_Conexao.SelecionarDados(command , conn);
+            SqlDataAdapter da = C_Conexao.SelecionarDados(command, conn);
             conn.Close();
             return da;
         }
@@ -373,7 +373,7 @@ $"Categoria = @Categoria, Unidade = @Unidade, Quantidade = @Quantidade, Estoque_
             }
 
             return quantidade;
-            
+
 
         }
         public void AtualizarQuantidade(int id, int qtd)
@@ -401,5 +401,67 @@ $"Categoria = @Categoria, Unidade = @Unidade, Quantidade = @Quantidade, Estoque_
 
 
         }
+        public void AtualizarVendaProduto(int id, int qtd)
+        {
+            SqlConnection conn = C_Conexao.AbrirConexao();
+            int qtdAtual = SelecionarQuantidade(id);
+            int qtdAtualizada = qtdAtual - qtd;
+
+            conn = C_Conexao.AbrirConexao();
+            SqlCommand command = new SqlCommand($"UPDATE Produto Set Quantidade = @Quantidade WHERE id = @id", conn);
+            command.Parameters.Add(new SqlParameter("@id", id));
+            command.Parameters.Add(new SqlParameter("@Quantidade", qtdAtualizada));
+            string verificacao = C_Conexao.modificarDados(command, conn);
+
+
+            if (verificacao == "ok")
+            {
+                MessageBox.Show("Produto Vendido!", "Venda");
+            }
+            else
+            {
+                MessageBox.Show("Não foi possivel realizar a venda", "Venda");
+            }
+        }
+        public void RegistrarProdutoCompra(int idProdu, string Categor, float PC, int Q, DateTimePicker data, string F, string Compra)
+        {
+
+            SqlConnection conn = C_Conexao.AbrirConexao();
+            string sql = ("INSERT INTO PCompra (id_Produto, Categoria, Preco_Compra, Data, Quantidade, Fornecedor) " +
+    "VALUES(@id_Produto, @Categoria, @Preco_Compra, @Data, @Quantidade, @Fornecedor)");
+
+            try
+            {
+                SqlCommand comando = new SqlCommand(sql, conn);
+                comando.Parameters.Add(new SqlParameter("@id_Produto", idProdu));
+                comando.Parameters.Add(new SqlParameter("@Categoria", Categor));
+                comando.Parameters.Add(new SqlParameter("@Preco_Compra", PC));
+                comando.Parameters.Add(new SqlParameter("@Quantidade", Q));
+                comando.Parameters.Add(new SqlParameter("@Data", data.Text));
+                comando.Parameters.Add(new SqlParameter("@Fornecedor", F));
+                C_CProdutos c_CProdutos = new C_CProdutos();
+                c_CProdutos.AtualizarQuantidade(Convert.ToInt32(idProdu), Q);
+
+
+                string verificacao = C_Conexao.modificarDados(comando, conn);
+                if (verificacao == "ok")
+                {
+                    MessageBox.Show("Produto Registrado com Sucesso!", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Não foi possivel Registrar o Produto", "Registro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
+
+
